@@ -1,7 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model ReaennModel
+@{
+    Layout = "_Layout";
 }
-
-<div class="text-center">
-
+<h1>Reaenn's Domain</h1>
+<p>This is Reaenn's domain</p>
+<div>
+    <form asp-action="Display">
+        <label>Name</label>
+        <input asp-for="name" type="text" />
+        <button type="submit">Submit</button>
+    </form>
 </div>
+
