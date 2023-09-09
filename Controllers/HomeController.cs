@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Project1.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Project1.Controllers
 {
@@ -7,6 +8,11 @@ namespace Project1.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Display(ReaennModel model)
+        {
+            return View(model);
         }
     }
 }
