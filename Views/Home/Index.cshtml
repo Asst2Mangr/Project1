@@ -2,12 +2,16 @@
 @{
     Layout = "_Layout";
 }
+
 <h1>Reaenn's Domain</h1>
 <p>This is Reaenn's domain</p>
 <div>
+    <div asp-validation-summary="All"></div>
     <form asp-action="Display">
         <label>Name</label>
         <input asp-for="name" type="text" />
+        <label>Number</label>
+        <input asp-for="number" type="text" />
         <button type="submit">Submit</button>
     </form>
 </div>
